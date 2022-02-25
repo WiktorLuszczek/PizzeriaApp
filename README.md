@@ -1,1 +1,1 @@
-version 2.4
+# Projekt realizowany na kursie Kodilla.
