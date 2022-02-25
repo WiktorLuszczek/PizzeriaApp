@@ -1,0 +1,170 @@
+.home-container{
+  width: 100%;
+  margin: 30px auto 0;
+    
+  .first-section{
+    width: 100%;
+    text-align: center;
+  }
+    
+  .tiles{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+    
+  .tile{
+    width: 49%;
+    height: 120px;
+    
+    img{
+      border-radius: 5px;
+      position: relative;
+      height: 120px;
+      width: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    
+    .text{
+      position: absolute;
+      width: 323.39px;
+      height: 120px;
+      z-index: 2;
+      color: white;
+      
+      h3{
+        padding-top: 5px;
+        font-size: 22px;
+        margin-bottom: 12px;
+        transform: translateY(15px);
+      }
+      
+      p{
+        opacity: 0;
+        font-size: 16px;
+        transform: translateY(20px);
+      }
+    }
+  }
+
+  
+  .tile:hover{
+    .text{
+      h3{
+        transform: translateY(-10px);
+        transition: 1s ease;
+      }
+      
+      p{
+        opacity: 1;
+        transform: translateY(-20px);
+        transition: 1s ease;
+      }
+    }
+  }
+   
+  .bottom{
+    margin: 15px 0 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 120px;
+    background-color: #FF6B6B;
+    border-radius: 5px;
+    color: white;
+    font-style: 'Oswald', sans-serif;
+    
+    h3{
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    p{
+      margin: 0;
+      font-size: 18px;
+    }  
+  }
+}
+
+.second-section{
+  margin: 50px 0;
+  text-align: center;
+  width: 100%;
+
+  .flickity-viewport{
+    height: 220px;
+  }
+
+  .carousel-cell{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .carousel-img{
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 5px;
+
+    img{
+      object-fit: cover;
+    }
+  }
+
+  .comment-text{
+    width: 320px;
+    padding-right: 20px;
+    padding-left: 15px;
+    text-align: left;
+  }
+}
+
+.gallery{
+  width: 100%;
+  height: 660px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .image{
+    width: 32.5%;
+    height: 32.5%;
+    border-radius: 5px;
+
+    img{
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .icons{
+      position: absolute;
+      z-index: 2;
+      font-size: 25px;
+      color: #FF6B6B;
+      width: 214.5px;
+      height: 214.5px;
+      text-align: center;
+      line-height: 214.5px;
+      opacity: 0;
+    }
+
+    .icons:hover{
+      opacity: 1;
+      transition: 0.5s ease;
+    }
+
+    .fa-heart:hover{
+      color: red;
+    }
+
+    .fa-share-alt:hover{
+      color: red;
+    }
+    
+    .icons:hover + img{
+      filter: brightness(75%);
+    }
+  }
+}
